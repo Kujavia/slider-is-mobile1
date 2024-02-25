@@ -248,7 +248,7 @@ footer {
 @media (max-width: 768px) {
   .container-about__wrapper .container-about__slider-wrapper .container-about__slider .container-about__slider-images {
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-    grid-template-rows: repeat(3, 100px);
+    grid-template-rows: repeat(2, 130px);
   }
 }
 @media (max-width: 768px) and (max-width: 768px) {
@@ -256,16 +256,18 @@ footer {
     display: none;
   }
 }
+.container-about__wrapper .container-about__slider-wrapper .container-about__slider .container-about__slider-images .slider-imagebox {
+  overflow: hidden;
+}
 .container-about__wrapper .container-about__slider-wrapper .container-about__slider .container-about__slider-images .slider-imagebox .slider-image {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  transition: all 0.3s ease-in-out;
+  transition: 0.5s;
 }
 .container-about__wrapper .container-about__slider-wrapper .container-about__slider .container-about__slider-images .slider-imagebox .slider-image:hover {
-  box-shadow: inset 0 0 5px #000, 0 8px 15px #000;
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 .container-about__wrapper .container-about__slider-wrapper .container-about__slider .container-about__slider-images .slider-imagebox:nth-child(3n) {
   grid-column: span 2;
