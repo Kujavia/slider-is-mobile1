@@ -19,6 +19,9 @@ footer {
   margin: 0 auto;
   .container-about__content {
     margin: 0 13%;
+    @media (max-width: 700px) {
+      margin: 0 8%;
+    }
     padding-top: 4%;
     .container-about__title {
       margin: 0;
@@ -53,27 +56,30 @@ footer {
     }
     .container-about__slider {
       margin: 0 13%;
+      @media (max-width: 700px) {
+        margin: 0 8%;
+      }
       padding-top: 2%;
       padding-bottom: 4%;
       .container-about__slider-images {
-        @media (max-width: 1920px) {
-          display: grid;
-        }
+        display: grid;
         @media (max-width: 320px) {
           display: none;
         }
-        grid-gap: 50px;
+        grid-gap: rem;
         grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
         grid-template-rows: repeat(2, 290px);
+        overflow-y: hidden;
+        grid-auto-rows: 0;
         grid-auto-flow: dense;
         @media (max-width: 1024px) {
-          grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-          grid-template-rows: repeat(2, 230px);
-          gap: 20px;
+          // grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+          // grid-template-rows: repeat(3, 230px);
+          gap: 10px;
         }
         @media (max-width: 768px) {
-          grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-          grid-template-rows: repeat(2, 200px);
+          grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+          grid-template-rows: repeat(2, 100px);
           @media (max-width: 768px) {
             .none-img {
               display: none;
