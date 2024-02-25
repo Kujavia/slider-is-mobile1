@@ -48,7 +48,7 @@ footer {
     }
   }
   .container-about__slider-wrapper {
-    @media (max-width: 320px) {
+    @media (max-width: 415px) {
       padding-bottom: 5%;
     }
     .container-about__slider {
@@ -59,7 +59,7 @@ footer {
         @media (max-width: 1920px) {
           display: grid;
         }
-        @media (max-width: 320px) {
+        @media (max-width: 415px) {
           display: none;
         }
         grid-gap: 50px;
@@ -99,7 +99,7 @@ footer {
       }
     }
     .container-about__slider-images-mob {
-      @media (min-width: 321px) {
+      @media (min-width: 415px) {
         display: none;
       }
       padding: 3%;

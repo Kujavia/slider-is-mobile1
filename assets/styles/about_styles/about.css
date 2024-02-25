@@ -205,7 +205,7 @@ footer {
   letter-spacing: 0%;
   text-align: left;
 }
-@media (max-width: 320px) {
+@media (max-width: 415px) {
   .container-about__wrapper .container-about__slider-wrapper {
     padding-bottom: 5%;
   }
@@ -226,7 +226,7 @@ footer {
     display: grid;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 415px) {
   .container-about__wrapper .container-about__slider-wrapper .container-about__slider .container-about__slider-images {
     display: none;
   }
@@ -268,7 +268,7 @@ footer {
   margin: 0 5%;
   /*цвет активного лейбла при активации чекбокса*/
 }
-@media (min-width: 321px) {
+@media (min-width: 415px) {
   .container-about__wrapper .container-about__slider-wrapper .container-about__slider-images-mob {
     display: none;
   }
